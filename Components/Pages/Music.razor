@@ -1,0 +1,100 @@
+﻿@using JackTheRobotSite.Components.Models;
+
+@page "/Music"
+
+<NavMenu />
+
+@foreach(var card in cardModels)
+{
+	<ProjectCard Model="card"/>
+}
+
+<div id="Spacer"></div>
+
+<SocialFooter />
+
+@code{
+	List<ProjectCardModel> cardModels = new()
+	{
+		new ProjectCardModel(
+			"Reroll One - Closed Forum",
+			"Composer",
+			"A minimalist dice roguelite. Descend through six trials of chance and consequence. Luck isn’t random—it’s a mirror.<br><br><a href=\"https://store.steampowered.com/app/4157580/Reroll_One/ \" target = \"_blank\">Wishlist now on Steam.</a>",
+			"ProjectImages/RerollOne.jpg",
+			"",
+			false
+		),
+
+		new ProjectCardModel(
+			"Cat Adoption Tales - Closed Forum",
+			"Composer",
+			"Foster and care for adorable hand drawn cats in this cozy 2D sim set to original Lo-Fi music.<br><br><a href=\"https://store.steampowered.com/app/4091580/Cat_Adoption_Tales/\" target = \"_blank\">Play it now on Steam.</a><br><br><a href=\"https://jacktherobot.bandcamp.com/album/cat-adoption-tales-ost\">Listen to the soundtrack on Bandcamp.</a>",
+			"ProjectImages/CAT.jpg",
+			"",
+			true
+		),
+
+		new ProjectCardModel(
+			"Otherhood - Old Bird Theatre",
+			"Composer, Technical Stage Manager",
+			"A grieving widow and a queer millennial discover the power of finding family in unexpected places.<br><br>A new theatre experience by <a href=\"https://www.instagram.com/oldbirdtheatre/\" target = \"_blank\">Old Bird Theatre</a> featuring an immersive multi-speaker sound system.",
+			"ProjectImages/Otherhood.jpg",
+			"",
+			false
+		),
+
+		new ProjectCardModel(
+			"Old Tunes Fresh Takes",
+			"Presenter, Editor",
+			"A community-driven podcast featuring listeners' takes on traditional folk music. Hosted by Jack The Robot and <a href=\"https://www.hevelwood.com\" target = \"_blank\">Hevelwood.</a><br><br>Listen now via the <a href=\"https://oldtunesfreshtakes.com/\" target = \"_blank\">Old Tunes Fresh Takes website</a> or wherever you get your podcasts.",
+			"ProjectImages/otft-SocialLogo.png",
+			"",
+			true
+		),
+
+		new ProjectCardModel(
+			"Brightside - SLAP Collective",
+			"Composer, Technical Stage Manager",
+			"Brightside is a workout through a lifetime soundtracked by a millennial anthem. It is a new workout experience that combines the energy of a fitness class with a live dance theatre performance. Made by SLAP Collective this 50-minute immersive journey delves into the past, present, and future of a millennial.<br><br>Original soundtrack by Jack The Robot.",
+			"",
+			"https://www.youtube.com/embed/I3x4KXWPwZw?si=mZYAdZrQopWbj64p",
+			false
+		),
+
+		new ProjectCardModel(
+			"Batty - Victoria Firth",
+			"Composer",
+			"A new production from <a href=\"https://www.victoriafirth.co.uk/\" target = \"_blank\">Victoria Firth & Company</a> explores the wildness – as opposed to madness – of women, and how our feral side can reconnect us to ourselves and our environment.",
+			"ProjectImages/Batty.jpg",
+			"",
+			true
+		),
+
+		new ProjectCardModel(
+			"Look After Your Knees - Natalie Bellingham",
+			"Composer",
+			"A new solo work by theatre maker, performer and physical comedian Natalie Bellingham. Look After Your Knees is a show about the pain and beauty of growing older, of connecting and unravelling, of taking hold and letting go.<br><br>Find out more <a href=\"https://lookafteryourknees.show\" target=\"_blank\">here</a>",
+			"",
+			"https://www.youtube.com/embed/Fm3U8N4g1M8?si=rSoit7oDMFzRJVK6",
+			false
+		),
+
+		new ProjectCardModel(
+			"These Four Walls - Ellie Harrison & Matt Rogers",
+			"Composer",
+			"What has it truly been like to be bereaved during the COVID-19 pandemic? How have people coped, when infection control restrictions have made saying goodbye difficult or impossible, and expressions of love and companionship from friends, family and community have been disrupted by social distancing?<br><br>Drawing on national research exploring experiences of loss and grief during the pandemic, THESE FOUR WALLS is a short film that gives voice to all those who have been bereaved in the UK.",
+			"",
+			"https://player.vimeo.com/video/709404846?h=50a5d69e59",
+			true
+		),
+
+		new ProjectCardModel(
+			"The Polar Bear (Is Dead) - Nat & Dani",
+			"Composer",
+			"Have you ever thought about what it means to lose something forever? A treasured possession? Someone you love? Or an entire species?<br><br>Natalie and Daniele have made a show about loss and being alone that's ultimately full of hope. It includes a plant, a polar bear, the Spice Girls and a conversation with Natalie’s Mum about the end of the world.",
+			"",
+			"https://www.youtube.com/embed/pAalkVnZOSs?si=eE5LT5oRU4p_jp77",
+			false
+		)
+	};
+}

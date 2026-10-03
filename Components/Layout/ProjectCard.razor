@@ -1,0 +1,56 @@
+﻿@using JackTheRobotSite.Components.Models;
+
+<div class="ProjectCard">
+
+	<div class="Header">
+		<h2>@Model.ProjectTitle</h2>
+	</div>
+
+	@if (Model.LeftAligned)
+	{
+		<div class="LeftContent">
+			@if (!string.IsNullOrWhiteSpace(Model.ImagePath))
+			{
+				<img src="@Model.ImagePath" />
+			}
+
+			@if (!string.IsNullOrWhiteSpace(Model.VideoURL))
+			{
+				<iframe src="@Model.VideoURL" />
+			}
+		</div>
+
+		<div class="RightDescription">
+			<p><b>@Model.ProjectRole</b></p>
+			<br />
+			<p>@((MarkupString)Model.ProjectDescription)</p>
+		</div>
+	}
+
+	@if (!Model.LeftAligned)
+	{
+		<div class="LeftDescription">
+			<p><b>@Model.ProjectRole</b></p>
+			<br />
+			<p>@((MarkupString)Model.ProjectDescription)</p>
+		</div>
+
+		<div class="RightContent">
+			@if (!string.IsNullOrWhiteSpace(Model.ImagePath))
+			{
+				<img src="@Model.ImagePath" />
+			}
+
+			@if (!string.IsNullOrWhiteSpace(Model.VideoURL))
+			{
+				<iframe src="@Model.VideoURL" />
+			}
+		</div>
+	}
+</div>
+
+
+@code{
+	[Parameter]
+	public ProjectCardModel Model { get; set; } = null!;
+}

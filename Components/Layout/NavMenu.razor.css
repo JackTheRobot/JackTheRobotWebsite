@@ -1,0 +1,13 @@
+nav{
+    margin-top: -30px;
+}
+
+#Logo{
+    height: 150px;
+    width: auto;
+}
+
+a{
+    color: var(--deepTeal);
+    margin-right: 10px;
+}

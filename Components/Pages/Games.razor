@@ -1,0 +1,72 @@
+﻿@using JackTheRobotSite.Components.Models;
+@page "/Games"
+
+<NavMenu />
+
+@foreach (var card in cardModels)
+{
+	<ProjectCard Model="card" />
+}
+
+<div id="Spacer"></div>
+
+<SocialFooter />
+
+@code{
+	List<ProjectCardModel> cardModels = new()
+	{
+		new ProjectCardModel(
+			"BeatChip '95 - Jack The Robot Games",
+			"Programmer, Composer",
+			"You find a beat up old PC in a hidden room with an arcane piece of music software. Can your beats lead you to success? Create tapes, get cash and upgrade your setup in this cosy music-making simulator<br><br>Get the game now or try the demo free on <a href=\"https://store.steampowered.com/app/4250100/BeatChip_95/\" target=\"_blank\">Steam</a>",
+			"",
+			"https://www.youtube.com/embed/G-TGi5-ohvU?si=AhreS5bzR7-AYVyQ",
+			false
+		),
+
+		new ProjectCardModel(
+			"Crescengo - SLAP Collective",
+			"Programmer, Composer",
+			"Crescengo is a walking adventure you play on your phone. Commissioned by York Civic Trust, it takes players on a tour of 12 statues of the iconic tansy beetle, each representing a famous local trailblazer. Players must match the movements of the beetle by tapping on their screen and, if they’re quick enough, are rewarded with a short bio of the trailblazer and a piece of music.",
+			"",
+			"https://www.youtube.com/embed/qSWQ0ElnzQ0?si=qlUSOMFx-b0_HWIv",
+			true
+		),
+
+		new ProjectCardModel(
+			"It's Not You It's M.E.",
+			"Composer, Audio Integration",
+			"It's Not You, It's M.E. is an interactive point-and-click game based on the artist’s experiences of living with Long COVID and M.E. It is a game you can't win, full of mini-games that often are impossible to complete.<br><br>Play it now on <a href=\"https://store.steampowered.com/app/4109440/Its_Not_You_Its_ME/\" target=\"_blank\">Steam</a>",
+			"ProjectImages/It's Not You.jpg",
+			"",
+			false
+		),
+
+		new ProjectCardModel(
+			"The Unfortunate Lass - Hevelwood",
+			"Programmer",
+			"An experiment in interactive performance, The Unfortunate Lass is a web app which allows audience members to provide the musical accompaniment to an otherwise a cappella performance by Hevelwood. Over the course of around 4 minutes, onscreen buttons split and morph to allow for a developing complexity of harmony.<br><br>Find out more on <a href=\"https://www.hevelwood.com\" target=\"_blank\">the Hevelwood website</a>",
+			"ProjectImages/UnfortunateLass.jpg",
+			"",
+			true
+		),
+
+		new ProjectCardModel(
+			"Bored on the Ward - SLAP Collective",
+			"Programmer",
+			"Bored on the Ward is a mobile game made in collaboration with Blah Blah Theatre, South West Yorkshire NHS Trust, and patients on the Royal Calderdale Hospital Children's ward. Players travel to a hospital in an alternate universe and complete a number of minigames to put a band together and cure their boredom.<br><br>Now available for <a href=\"https://play.google.com/store/apps/details?id=com.SLAPCollective.BoredontheWard&hl=en\" target=\"_blank\">Android</a> and <a href=\"https://apps.apple.com/gb/app/bored-on-the-ward/id6755676485\" target=\"_blank\">IPhone</a>",
+			"ProjectImages/BOTW.jpg",
+			"",
+			false
+		),
+
+		new ProjectCardModel(
+			"Yellow Handkerchief - Hevelwood",
+			"Programmer",
+			"The Yellow Handkerchief web app allows users to arrange their own version of the song taken from Hevelwood's album 'Of Greatness Receding'. Play it now at <a href=\"https://hevelwood.com/yellow-handkerchief\" target=\"_blank\">Hevelwood's website.</a>",
+			"ProjectImages/Yellow Handkerchief.png",
+			"",
+			true
+		),
+	};
+}

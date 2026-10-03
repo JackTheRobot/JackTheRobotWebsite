@@ -1,0 +1,33 @@
+﻿#HomepageLogo {
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: -5%;
+}
+
+#HomepageNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%;
+}
+
+.button {
+    
+    font-size: 2em;
+    color: var(--deepTeal);
+    background-color: var(--teal);
+    border: 2px solid var(--deepTeal);
+    border-radius: 2px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+    .button:hover {
+        background-color: var(--tealLowOpacity);
+    }

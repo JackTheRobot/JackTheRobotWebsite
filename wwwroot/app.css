@@ -1,0 +1,36 @@
+:root {
+    --teal: #0abba7;
+    --lightTeal: rgb(209, 255, 207);
+    --tealLowOpacity: rgba(67, 238, 185, 0.4);
+    --deepTeal: rgb(0, 42, 51);
+    --red: rgb(128, 0, 80);
+    --deepRed: rgb(51,0,25);
+    --white: rgb(255, 255, 255);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans', serif;
+}
+
+.page {
+    min-height: 100vh;
+    background-color: var(--teal);
+}
+
+header {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+main {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
